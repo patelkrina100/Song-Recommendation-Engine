@@ -11,6 +11,24 @@ This **Song Recommendation System** allows users to find similar songs based on 
 - Builds a **graph-based recommendation system** using NetworkX.
 - **Interactive user input** for easy song lookup.
 
+## 📏 Understanding Euclidean Distance
+
+The **Euclidean Distance** is used to measure the similarity between songs. It calculates the straight-line distance between two points in a multi-dimensional space. In this system, each song is represented as a point in a 4-dimensional space defined by the features:
+
+- **Acousticness** 🎵
+- **Energy** ⚡
+- **Valence** 😀
+- **Danceability** 💃
+
+The formula for **Euclidean Distance** between two songs **A** and **B** is:
+
+\[
+d(A, B) = \sqrt{(A_1 - B_1)^2 + (A_2 - B_2)^2 + ... + (A_n - B_n)^2}
+\]
+
+where each **A_n** and **B_n** represents a feature value of a song.  
+A **lower Euclidean distance** means the songs are more similar.
+
 ## 📄 Usage Instructions
 
 1. **Run the script** (`python script_name.py`).
@@ -37,3 +55,4 @@ This **Song Recommendation System** allows users to find similar songs based on 
 - The system **only recommends songs from the sampled dataset (`sampled_songs.csv`)**.
 - If a song is **not found**, check the file and pick a song from the list.
 - The **threshold for similarity** can be adjusted in the script.
+
